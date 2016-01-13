@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201601131005411_Initial.Designer.cs">
       <DependentUpon>201601131005411_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601131022472_Fulling.cs" />
+    <Compile Include="Migrations\201601131022472_Fulling.Designer.cs">
+      <DependentUpon>201601131022472_Fulling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Product.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201601131005411_Initial.resx">
       <DependentUpon>201601131005411_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601131022472_Fulling.resx">
+      <DependentUpon>201601131022472_Fulling.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

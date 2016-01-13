@@ -26,6 +26,19 @@ namespace ConsoleApplication2.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Customers.AddOrUpdate(
+                p => p.Name,
+                new Customer {Login = "Brainfucker", Name = "Andrew Peters"}
+                );
+            context.SaveChanges();
+
+            context.Products.AddOrUpdate(
+                p => p.ID,
+                new Product { ProductName = "Cover", Rate = 4, Price = 1000 },
+                new Product { ProductName = "Charger", Rate = 5, Price = 2000 },
+                new Product { ProductName = "Battery", Rate = 3, Price = 1000 }
+                );
+            context.SaveChanges();
         }
     }
 }
