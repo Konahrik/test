@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Program
+    class Cart
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public int ID { get; set; }
+        public Order Order { get; set; }
+        public Product Product { get; set; }
     }
 }

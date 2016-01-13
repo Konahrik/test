@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Program
+    class Order
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public int ID { get; set; }
+        public Customer Customer { get; set; }
     }
 }

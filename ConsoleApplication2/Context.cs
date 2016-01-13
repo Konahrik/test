@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Program
+    class Context
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }

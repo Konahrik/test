@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class Program
+    class Customer
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public int ID { get; set; }
+        public string Login { get; set; }
+        public string Name { get; set; }
     }
 }
