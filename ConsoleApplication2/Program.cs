@@ -10,6 +10,13 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
+            Context context=new Context();
+
+            var queryProduct = from pr in context.Products
+                               where pr.Rate > 3
+                               orderby pr.ProductName
+                               select pr;
+
 
         }
     }
